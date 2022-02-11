@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* navigation bar */
+.navbar {
+  padding-top: 25px;
+  padding-bottom: 55px;
+  height: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(0,0,0,1.0) !important;
+}
+
+
+/* main contents - global setting */
+.container-fluid {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+/* main contents - index */
+
+.container-fluid.index {
+  padding-top: 75px;
+}
+.index .caption {
+  max-width: 100%;
+  display: block;
+  text-align: left;
+  padding-top: 2.5vw;
+}
+
+.index .caption h1 {
+  font-size: 20px;
+}
+.index .caption h1 a{
+  color: rgba(0,0,0,1.0) !important;
+}
+
+
+.index .caption h2{
+  font-size: 18px;
+}
+.index .caption h2 a{
+  color: rgba(0,0,0,1.0) !important;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.index .caption h2 a:hover{
+  background-color: rgba(255, 255, 0, 1);
+}
+
+
+/* main contents - work */
+
+.container-fluid.work {
+  padding-top: 1vw;
+}
+
+.work .row.caption{
+  padding-top: 5.0vw;
+}
+
+.work h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.work .row.content {
+  padding-top: 1.0vw;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.work .content .col-md-4 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.work .content .card-img-top {
+  padding-bottom: 2vh;
+  height: calc(15vw);
+}
+
+.work .content h2 {
+  font-size: 18px;
+  margin-bottom: 0.8vh;
+}
+
+.work .content p {
+  font-size: 16px;
+  margin-bottom: 1.5vh;
+}
+
+.work .content h3 {
+  font-size: 16px;
+  color: gray;
+  font-weight: normal;
+  margin-bottom: 1vh;
+}
+
+/* modal sytle*/
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+      max-width: 1000px !important;
+  }
+}
+
+.modal-dialog {
+  overflow-y: initial !important;
+}
+
+.modal-body {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+
+.modal-body a{
+  color: #212529;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.modal-body a:hover{
+  color: black;
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+.modal-body .img-fluid {
+  max-height: 300px;
+}
+
+.modal-title {
+  font-weight: 500;
+}
+
+.video-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed, iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* footer */
+.container-fluid.footer {
+  padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
+/* for mobile */ 
+
+@media (max-width: 767px) {
+
+  /* main contents - work */
+  .work .row.caption{
+    padding-top: 12vw;
+  }
+
+  .work .row.content {
+    padding-top: 3.0vw;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .work .content .card-img-top {
+    padding-bottom: 2.5vw;
+    height: 45vw;
+  }
+
+  .work h3 {
+    padding-bottom: 5.0vw;
+  }
+
+  /* footer */
+  .container-fluid.footer {
+    padding-top: 5.0vw;
+    padding-bottom: 5.0vw;
+  }
+}
