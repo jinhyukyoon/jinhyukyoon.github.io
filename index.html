@@ -33,8 +33,8 @@
 
   <div class="container-fluid index">
     <div class="row caption">
-      <h1><span style="color:gray">A</style></span> robotics engineer <a target="_blank" href="https://livsmed.com"><span style="color:gray">@</span>LivsMed</a> </h1>
-      <h1><span style="color:gray">experienced in various zero-to-one projects</span></h1>
+      <h1><span style="color:gray">A</style></span> robotics engineer</h1>
+      <h1><span style="color:gray">building robot systems from requirements to validation.</span></h1>
     </div>
     <div class="row caption">
       <h2><a href="mailto:jinhyuk.a.yoon@gmail.com">e-mail</a> &nbsp; | &nbsp; 
@@ -49,20 +49,133 @@
     </div>
     <div class="row content">
       <div class="col-md-4">
-        <!-- <a href="" data-toggle="modal" data-target="#"> -->
-          <img class="card-img-top" src="./img/stark.png" alt=""></img>
-        <!-- </a>   -->
+        <a href="" data-toggle="modal" data-target="#popup-stark">
+          <img class="card-img-top" src="./img/stark_t.png" alt=""></img>
+        </a>
         <h2>Stark</h2>
-        <p> A minimal invasive surgical robotic system </p>
-        <h3>2022 - Present</h3>
+        <p> A laparoscopic telesurgical robotic system </p>
+        <h3>2022 - 2026</h3>
       </div>
+
+      <div id="popup-stark" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog work-contents modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> Stark </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+              <div class="modal-body">
+                <h1>1. Robot control software</h1>
+                <font color="gray">
+                  My role: Control algorithm/software development.<br>
+                  Skills: C++, linux RT, real-time control, teleoperation, EtherCAT, system integration, system debugging, validation<br>
+                </font><br>
+
+                I led on control algorithms and software development for a minimally invasive laparoscopic surgical robot.
+                As a founding member of the Robot R&amp;D Department and Control/SW team, I participated development stages from prototype to engineering sample.
+                Stark is a teleoperation system with master and slave robot that involves many constraints such as surgical instruments, anchored user experience from exsiting system like Da Vinci, and safety requirements as a medical device.
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/stark_1.png">
+                  </div>
+                </div>
+
+                I translated system level requirements into control software behavior that could run on real system.
+                This involved decomposing robot functions into software module and architecture, integrating hardware interfaces, debugging real-time behavior on the robot, and validating the system beyond isolated bench tests.
+
+                The goal was to build a robot system that could be controlled, debugged, repeated, and trusted in realistic surgical workflows.
+
+                <br><br><br>
+
+                <h1>2. Long distance teleoperation</h1>
+                <font color="gray">
+                  My role: teleoperation integration, system debugging, validation execution<br>
+                </font><br>
+
+                I contributed to a long distance remote surgical procedure demonstration over more than 3,000 km with a measured round-trip delay of 65 ms.
+                The work focused on keeping the whole robot system predictable when human input, network delay, robot motion, and hardware response were connected end to end.
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/stark_2.jpg">
+                  </div>
+                </div>
+
+                I worked across master, slave, control software, and communication layer.
+                Many issues only surfaced after the robot system and network were connected as a full teleoperation system.
+                I traced problems from operator input to physical robot response, focusing on how latency and timing variations affected stability, responsiveness, and operator control.
+
+                The demonstration validated the software within an end-to-end surgical workflow, where control behavior, system latency, hardware response, and human interaction had to be tested together.
+
+
+                <br><br><br>
+
+                <h1>3. System and software architecture</h1>
+                <font color="gray">
+                  My role: system/software architecture design, requirement engineering, interface definition, software V&amp;V<br>
+                </font><br>
+
+                As the robot system and team grew, the main challenge shifted from implementation to system clarity.
+                Important requirements were often hidden inside clinical expectations, business milestone, and different specialties of each team.
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/stark_3.png">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/stark_4.png">
+                  </div>
+                </div>
+
+                I turned those implicit requirements into architecture, specifications, interfaces, and validation items.
+                The system had to be clear enough to build, test, review, and maintain across teams.
+
+                As the medical device, the software architecture and V&amp;V work also considered regulatories and safety standards such as the IEC 60601 family.
+                Software behavior, hardware interfaces, alarms, failure handling, essential performance, and test evidence were treated as connected parts of the same system problem.
+
+                I helped connect requirements to implementation and validation so that system behavior could be tested and justified, rather than only demonstrated.
+                I also led software V&ampV with more than 10 software engineers and coordinated architecture and specification work across more than 40 cross-functional members.
+
+                <br><br><br>
+
+                <h1>4. Labs and demonstrations</h1>
+                <font color="gray">
+                  Role: system operation/debugging, experiment support, demo execution, issue triage<br>
+                </font><br>
+
+                I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for Series E, pre-IPO, and IPO milestones.
+                These settings tested the robot as a complete system, while robot system was still under development with numerous improvements.
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/stark_5.png">
+                  </div>
+                </div>
+
+                Labs and demonstrations tested the robot beyond ordinary development conditions.
+                System setup, surgical workflow, hardware variation, timing, operator interaction, and subsystem dependencies all became part of the engineering problem.
+
+                I kept the system operational, traced failures quickly, and brought the findings back into software, control, integration, and validation.
+                Each run helped clarify requirements, strengthen tests, and improve implementation.
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
 
       <div class="col-md-4">
         <a href="" data-toggle="modal" data-target="#popup-toh2023">
           <img class="card-img-top" src="./img/toh2023_t.png" alt=""></img>
         </a>
         <h2> Cable-driven Haptic Interface </h2>
-        <p> Supporting virtual education contents</p>
+        <p> Maximum workspace and comparative study</p>
         <h3>2020 - 2021</h3>
       </div>
 
@@ -129,9 +242,37 @@
 
                 Virtual exhibits with haptic feedback offer greater flexibility in diversifying content and providing digital affordance, even at a lower cost, than physical exhibits.
                 However, few studies addressed the value of such haptics-enabled educational systems in informal learning environments.
+
+                
+                <div class="row">
+                  <div class="col-lg-12">
+                    <img class="img-fluid mx-auto d-block rounded" src="./img/toh2024_1.png">
+                  </div>
+                </div>
+
                 In this study, we investigated the feasibility of a haptic exhibit as an alternative or supplement for a traditional physical exhibit in a science museum.
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <img class="img-fluid mx-auto d-block rounded" src="./img/toh2024_2.png">
+                </div>
+                <div class="col-lg-6">
+                  <img class="img-fluid mx-auto d-block rounded" src="./img/toh2024_3.png">
+                </div>
+              </div>
+                
                 We developed a two-degree-of-freedom cable-driven haptic device to simulate physical interactions on a large visual display.
                 Choosing a seesaw-like physical exhibit available in a local museum, we designed and implemented a virtual lever simulation closely embodying the physics principles that the physical exhibit showcased. 
+                
+                
+              <div class="row">
+                <div class="col-lg-6">
+                  <img class="img-fluid mx-auto d-block rounded" src="./img/toh2024_4.png">
+                </div>
+                <div class="col-lg-6">
+                  <img class="img-fluid mx-auto d-block rounded" src="./img/toh2024_5.png">
+                </div>
+              </div>
                 Then, we conducted an observational user study with children to compare the exhibit-visitor interaction behaviors, learning effects, and self-reported motivation and enjoyment between the physical and virtual exhibits.
                 The results revealed that the visitors well-received and engaged with the haptic exhibit, instantiating its potential application in diverse learning settings.
                 <br>
@@ -139,6 +280,10 @@
           </div>
         </div>
       </div>
+
+
+
+
 
       <div class="col-md-4">
         <a href="" data-toggle="modal" data-target="#popup-uist2020">
@@ -192,6 +337,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
 
     <div class="row caption">
       <h1>Project</h1>
