@@ -43,12 +43,45 @@
   overflow: hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed, iframe {
+.video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.project-frame-body {
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.project-frame {
+  width: 100%;
+  height: calc(100vh - 150px);
+  border: 0;
+  display: block;
+}
+
+.project-detail-page {
+  margin: 0;
+}
+
+.project-detail {
+  max-height: none;
+  overflow-y: visible;
+}
+
+.project-detail h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.project-detail .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .modal-content .row {
