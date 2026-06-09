@@ -93,7 +93,9 @@
 }
 
 .work .content .card-img-top {
-  padding-bottom: 2vh;
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 2vh;
   height: calc(15vw);
 }
 
@@ -136,7 +138,7 @@
   }
 
   .work .content .card-img-top {
-    padding-bottom: 2.5vw;
+    margin-bottom: 2.5vw;
     height: 45vw;
   }
 
