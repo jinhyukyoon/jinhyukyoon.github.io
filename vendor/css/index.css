@@ -49,6 +49,9 @@
 .index .caption h1 {
   font-size: 20px;
 }
+.index-muted {
+  color: gray;
+}
 .index .caption h1 a{
   color: rgba(0,0,0,1.0) !important;
 }
