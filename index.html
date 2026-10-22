@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -13,269 +13,86 @@
 
   <title>Jinhyuk Yoon</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom styles for this template -->
-  <link href="./vendor/css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="./vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="./vendor/css/site.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">Jinhyuk Yoon</a>
-    </nav>
+  <header class="container">
+    <nav><ul><li><a class="brand" href="./">Jinhyuk Yoon</a></li></ul></nav>
   </header>
 
-  <div class="container-fluid index">
-    <div class="row caption">
-      <h1><span class="index-muted">A</span> robotics engineer<span class="index-muted"> @ <a target="_blank" href="https://www.carbon6robotics.com/">CarbonSix</a></span></h1>
-      <h1><span class="index-muted">building robot systems from requirements to validation.</span></h1>
-    </div>
-    <div class="row caption">
-      <h2>
-        <a href="mailto:jinhyuk.a.yoon@gmail.com">e-mail</a> &nbsp; | &nbsp;
-        <a target="_blank" href="https://www.linkedin.com/in/jinhyukyoon/">linkedin</a>
-      </h2>
-    </div>
-  </div>
+  <main class="container">
+    <section class="intro-wrap">
+      <h1 class="intro"><span class="muted">A</span> robotics engineer<span class="muted"> @ <a class="plain" target="_blank" href="https://www.carbon6robotics.com/">CarbonSix</a></span></h1>
+      <h1 class="intro"><span class="muted">building robot systems from requirements to validation.</span></h1>
+      <p class="links">
+        <a class="hl" href="mailto:jinhyuk.a.yoon@gmail.com">e-mail</a> &nbsp; | &nbsp;
+        <a class="hl" target="_blank" href="https://www.linkedin.com/in/jinhyukyoon/">linkedin</a>
+      </p>
+    </section>
 
-  <div class="container-fluid work">
-    <div class="row caption">
-      <h1>Work</h1>
-    </div>
-    <div class="row content">
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-stark">
-          <img class="card-img-top" src="./img/stark_t.png" alt="">
-        </a>
-        <h2>Stark</h2>
-        <p> A laparoscopic telesurgical robotic system </p>
-        <h3>2022 - 2026</h3>
-      </div>
-
-      <div id="popup-stark" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"> Stark </h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/stark/index.html"
-                title="Stark details">
-              </iframe>
-            </div>
-          </div>
+    <section class="group">
+      <h2 class="sec">Work</h2>
+      <div class="cards">
+        <div class="card-x">
+          <a class="thumb-link" href="./work/stark/"><img class="thumb" src="./img/stark_t.png" alt=""></a>
+          <h3 class="card-title">Stark</h3>
+          <p class="card-sub">A laparoscopic telesurgical robotic system</p>
+          <p class="card-year muted">2022 - 2026</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/toh2023/"><img class="thumb contain" src="./img/toh2023_t.png" alt=""></a>
+          <h3 class="card-title">Cable-driven Haptic Interface</h3>
+          <p class="card-sub">Maximum workspace and comparative study</p>
+          <p class="card-year muted">2020 - 2021</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/uist2020/"><img class="thumb contain" src="./img/uist2022_t.png" alt=""></a>
+          <h3 class="card-title">Augmenting Physical Buttons</h3>
+          <p class="card-sub">Programmable feels with vibrotactile feedback</p>
+          <p class="card-year muted">2019</p>
         </div>
       </div>
+    </section>
 
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-toh2023">
-          <img class="card-img-top" src="./img/toh2023_t.png" alt="">
-        </a>
-        <h2> Cable-driven Haptic Interface </h2>
-        <p> Maximum workspace and comparative study</p>
-        <h3>2020 - 2021</h3>
-      </div>
-
-      <div id="popup-toh2023" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"> Cable-driven Haptic Interface </h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/toh2023/index.html"
-                title="Cable-driven Haptic Interface details">
-              </iframe>
-            </div>
-          </div>
+    <section class="group">
+      <h2 class="sec">Archive</h2>
+      <div class="cards">
+        <div class="card-x">
+          <a class="thumb-link" href="./work/interactive_torque_designer/"><img class="thumb contain" src="./img/samsung_t.jpg" alt=""></a>
+          <h3 class="card-title">Interactive Torque Designer</h3>
+          <p class="card-sub">Dynamic analysis through graphic interaction</p>
+          <p class="card-year muted">2019</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/science_communication/"><img class="thumb" src="./img/sc_t.png" alt=""></a>
+          <h3 class="card-title">Science Communication</h3>
+          <p class="card-sub">Public speech and on-stage content</p>
+          <p class="card-year muted">2016 - 2020</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/entropy/"><img class="thumb" src="./img/entropy_t.jpg" alt=""></a>
+          <h3 class="card-title">Entropy</h3>
+          <p class="card-sub">Video art metaphor for entropy</p>
+          <p class="card-year muted">2017</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/picture_science/"><img class="thumb" src="./img/karts_t.jpg" alt=""></a>
+          <h3 class="card-title">Picture Science Project</h3>
+          <p class="card-sub">Science with drawing and hands-on activity</p>
+          <p class="card-year muted">2016</p>
+        </div>
+        <div class="card-x">
+          <a class="thumb-link" href="./work/tedx/"><img class="thumb" src="./img/tedx_t.jpg" alt=""></a>
+          <h3 class="card-title">TEDxPOSTECH</h3>
+          <p class="card-sub">Talk conference on the campus</p>
+          <p class="card-year muted">2014 - 2015</p>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-uist2020">
-          <img class="card-img-top" src="./img/uist2022_t.png" alt="">
-        </a>
-        <h2>Augmenting Physical Buttons</h2>
-        <p> Programmable feels with vibrotactile feedback </p>
-        <h3>2019</h3>
-      </div>
-
-      <div id="popup-uist2020" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Augmenting Physical Buttons</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/uist2020/index.html"
-                title="Augmenting Physical Buttons details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row caption">
-      <h1>Project</h1>
-    </div>
-
-    <div class="row content">
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-itd">
-          <img class="card-img-top" src="./img/samsung_t.jpg" alt="">
-        </a>
-        <h2>Interactive Torque Designer</h2>
-        <p> Dynamic analysis through graphic interaction </p>
-        <h3>2019</h3>
-      </div>
-
-      <div id="popup-itd" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Interactive Torque Designer</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/interactive_torque_designer/index.html"
-                title="Interactive Torque Designer details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-science-communication">
-          <img class="card-img-top" src="./img/sc_t.png" alt="">
-        </a>
-        <h2>Science Communication</h2>
-        <p> Public speech and on-stage content</p>
-        <h3>2016 - 2020</h3>
-      </div>
-
-      <div id="popup-science-communication" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Science Communication</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/science_communication/index.html"
-                title="Science Communication details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-entropy">
-          <img class="card-img-top" src="./img/entropy_t.jpg" alt="">
-        </a>
-        <h2>Entropy</h2>
-        <p> Video art metaphor for entropy</p>
-        <h3>2017</h3>
-      </div>
-
-      <div id="popup-entropy" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Entropy</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/entropy/index.html"
-                title="Entropy details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row content">
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-picture-science">
-          <img class="card-img-top" src="./img/karts_t.jpg" alt="">
-        </a>
-        <h2>Picture Science Project</h2>
-        <p> Science with drawing and hands-on activity</p>
-        <h3>2016</h3>
-      </div>
-
-      <div id="popup-picture-science" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Picture Science Project</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/picture_science/index.html"
-                title="Picture Science Project details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <a href="" data-bs-toggle="modal" data-bs-target="#popup-tedx">
-          <img class="card-img-top" src="./img/tedx_t.jpg" alt="">
-        </a>
-        <h2>TEDxPOSTECH</h2>
-        <p> Talk conference on the campus </p>
-        <h3>2014 - 2015</h3>
-      </div>
-
-      <div id="popup-tedx" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog work-contents modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">TEDxPOSTECH</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body work-frame-body">
-              <iframe
-                class="work-frame"
-                src="./work/tedx/index.html"
-                title="TEDxPOSTECH details">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid footer">
-  </div>
+    </section>
+  </main>
 </body>
 
 </html>

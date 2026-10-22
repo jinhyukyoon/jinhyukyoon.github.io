@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stark</title>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Stark</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="../../vendor/css/site.css">
+</head>
 
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../vendor/css/work.css" rel="stylesheet">
-  </head>
+<body>
+  <header class="container">
+    <nav><ul><li><a class="brand" href="../../">Jinhyuk Yoon</a></li></ul></nav>
+  </header>
 
-  <body class="work-detail-page">
-    <main class="work-detail">
-      <h1>1. Robot control software</h1>
-      <span class="work-muted">
+  <main class="container">
+    <h1 class="detail-title">Stark</h1>
+    <p class="muted detail-meta">2022 - 2026<br>A laparoscopic telesurgical robotic system</p>
+
+    <section class="sec-detail">
+      <h2>1. Robot control software</h2>
+      <p class="muted role">
         My role: control algorithm/software development.<br>
         Skills: C++, linux RT, real-time control, teleoperation, EtherCAT, system integration, system debugging, validation<br>
-      </span><br>
+      </p>
 
       I led on control algorithms and software development for a minimally invasive laparoscopic surgical robot, Stark.
       Stark is a teleoperation system with master and slave robot that involves many constraints such as surgical instruments, anchored user experience from exsiting system like Da Vinci, and safety requirements as a medical device.
       As a founding member of the Robot R&amp;D Department and Control/SW team, I participated development stages from prototype to engineering sample.
 
-      <div class="row">
-        <div class="col-lg-12">
-          <img class="img-fluid mx-auto d-block rounded" src="./img/stark_1.png" alt="">
-        </div>
+      <div class="figs wide">
+        <img src="./img/stark_1.png" alt="">
       </div>
 
       I translated system level requirements into control software behavior that could run on real system.
@@ -35,18 +41,19 @@
 
       <br><br><br>
 
-      <h1>2. Long distance teleoperation</h1>
-      <span class="work-muted">
+          </section>
+
+    <section class="sec-detail">
+      <h2>2. Long distance teleoperation</h2>
+      <p class="muted role">
         My role: teleoperation integration, system debugging, validation execution<br>
-      </span><br>
+      </p>
 
       I contributed to a long distance remote surgical procedure demonstration over more than 3,000 km with a measured round-trip delay of 65 ms.
       The work focused on keeping the whole robot system predictable when human input, network delay, robot motion, and hardware response were connected end to end.
 
-      <div class="row">
-        <div class="col-lg-12">
-          <img class="img-fluid mx-auto d-block rounded" src="./img/stark_2.jpg" alt="">
-        </div>
+      <div class="video">
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/o7PK-hOOUtc?rel=0&showinfo=0&controls=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       </div>
 
       I worked across master, slave, control software, and communication layer.
@@ -57,21 +64,20 @@
 
       <br><br><br>
 
-      <h1>3. System and software architecture</h1>
-      <span class="work-muted">
+          </section>
+
+    <section class="sec-detail">
+      <h2>3. System and software architecture</h2>
+      <p class="muted role">
         My role: system/software architecture design, requirement engineering, interface definition, software V&amp;V<br>
-      </span><br>
+      </p>
 
       As the robot system and team grew, the main challenge shifted from implementation to system clarity.
       Important requirements were often hidden inside clinical expectations, business milestone, and different specialties of each team.
 
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid mx-auto d-block rounded" src="./img/stark_3.png" alt="">
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid mx-auto d-block rounded" src="./img/stark_4.png" alt="">
-        </div>
+      <div class="figs two">
+        <img src="./img/stark_3.png" alt="">
+        <img src="./img/stark_4.png" alt="">
       </div>
 
       I turned those implicit requirements into architecture, specifications, interfaces, and validation items.
@@ -85,18 +91,19 @@
 
       <br><br><br>
 
-      <h1>4. Labs and demonstrations</h1>
-      <span class="work-muted">
+          </section>
+
+    <section class="sec-detail">
+      <h2>4. Labs and demonstrations</h2>
+      <p class="muted role">
         My role: system operation/debugging, experiment support, demo execution, issue triage<br>
-      </span><br>
+      </p>
 
       I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for Series E, pre-IPO, and IPO milestones.
       These settings tested the robot as a complete system, while robot system was still under development with numerous improvements.
 
-      <div class="row">
-        <div class="col-lg-12">
-          <img class="img-fluid mx-auto d-block rounded" src="./img/stark_5.png" alt="">
-        </div>
+      <div class="figs">
+        <img src="./img/stark_5.png" alt="">
       </div>
 
       Labs and demonstrations tested the robot beyond ordinary development conditions.
@@ -105,7 +112,8 @@
       I kept the system operational, traced failures quickly, and brought the findings back into software, control, integration, and validation.
       Each run helped clarify requirements, strengthen tests, and improve implementation.
       <br>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
 
 </html>

@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Torque Designer</title>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Interactive Torque Designer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="../../vendor/css/site.css">
+</head>
 
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../vendor/css/work.css" rel="stylesheet">
-  </head>
+<body>
+  <header class="container">
+    <nav><ul><li><a class="brand" href="../../">Jinhyuk Yoon</a></li></ul></nav>
+  </header>
 
-  <body class="work-detail-page">
-    <main class="work-detail">
-      <span class="work-muted">My role: dynamic analysis, application development
-        <br>Advisor: Geonhee Lee, Wangi Park, Junwon Seo, Yongsoo Kyong<br></span><br>
+  <main class="container">
+    <h1 class="detail-title">Interactive Torque Designer</h1>
+    <p class="muted detail-meta">2019<br>Dynamic analysis through graphic interaction</p>
+
+    <section class="sec-detail">
+      <p class="muted role">My role: dynamic analysis, application development
+        <br>Advisor: Geonhee Lee, Wangi Park, Junwon Seo, Yongsoo Kyong<br></p>
       Dynamic analysis of hinge takes important part on developing digital oven.
       Traditional method that uses a computational simulation software, however, takes complicated manipulation process.
       Hence, it cannot provide reverse engineering, which modifies dynaimc property such as torque and results in a desired hinge profile.
       Interactive Torque Designer solves these problems through dynamic analysis and web application which even enables interactive design with graphical modification.<br>
-      <div class="row">
-        <div class="col-lg-12">
-          <img class="img-fluid rounded" src="./img/samsung_1.gif" alt="">
-        </div>
+      <div class="figs wide">
+        <img src="./img/samsung_1.gif" alt="">
       </div>
       Web application has universality and scalability.
       Any user can use this application only with internet browser and adapting additional function requires just simple programming.
       Using d3.js library, plotted data enables to reflect dynamic analysis result graphically.
       Consequently, user can get torque profile data only with manipulating visualized cam profile data and vice versa.
-      <div class="row">
-        <div class="col-lg-12">
-          <img class="img-fluid rounded" src="./img/samsung_2.gif" alt="">
-        </div>
+      <div class="figs wide">
+        <img src="./img/samsung_2.gif" alt="">
       </div>
       Direct user experience feedbacks of field engineers according to iterative design process suggests multiple drag and other functions which make design process more easily.
       With the final version of Interactive Torque Designer, user can intuitively analyze torque and do the inverse engineering, which significantly simplifies mechanical design process of digital oven.
       Furthermore, it helps engineer to explain to other division members about mechanical phenomena through graphical expression.
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
 
 </html>
