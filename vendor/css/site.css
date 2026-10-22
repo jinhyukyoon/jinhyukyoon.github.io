@@ -6,7 +6,7 @@ body { margin: 0; background: #fff; color: #24221f; font-family: 'Jost', system-
 a { color: inherit; text-decoration: none; }
 img { display: block; }
 h1, h2 { margin: 0; font-weight: 400; }
-.wrap { max-width: 976px; margin: 0 auto; padding: 0 40px; }
+.wrap { max-width: 976px; margin: 0 auto; padding-left: 40px; padding-right: 40px; }
 .ul { text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
 .mute, .muted { color: #77736c; }
 
@@ -31,7 +31,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 .pic.contain img { object-fit: contain; }
 .work:hover .pic img { transform: scale(1.03); }
 .year-line { font-size: .95rem; margin-bottom: .9rem; }
-.title { font-size: 2.1rem; line-height: 1.15; }
+.title { font-size: 2.1rem; line-height: 1.15; font-weight: 400; }
 .work .sub { margin: .8rem 0 0; font-size: 1.12rem; line-height: 1.5; }
 #archive { padding-top: 170px; }
 #archive h2 { margin: 0 0 1.6rem; font-size: 1.5rem; }
@@ -79,7 +79,8 @@ h1, h2 { margin: 0; font-weight: 400; }
 
 @media (max-width: 760px) {
   .fab { right: 14px; bottom: 14px; }
-  .wrap { padding: 0 20px; }
+  .wrap { padding-left: 20px; padding-right: 20px; }
+  .sec { padding-top: 0; }
   .work, .arch, .sec, .figs.two, .figs.three { grid-template-columns: 1fr; gap: 1.5rem; }
   .sec > .body { grid-column: auto; }
 }
