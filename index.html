@@ -34,92 +34,83 @@
 }
   </script>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="./vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="./vendor/css/site.css">
 </head>
 
-<body>
-  <header class="container">
-    <nav><ul><li><a class="brand" href="./">Jinhyuk Yoon</a></li></ul></nav>
+<body class="home">
+  <header id="top" class="wrap top">
+    <a class="name big" href="./">Jinhyuk Yoon</a>
+    <nav>
+      <a href="#work">work</a>
+      <a href="#archive">archive</a>
+      <a href="#contact">contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="intro-wrap">
-      <h1 class="intro"><span class="muted">A</span> robotics engineer<span class="muted"> @ <a class="plain" target="_blank" href="https://www.carbon6robotics.com/">CarbonSix</a></span></h1>
-      <h1 class="intro"><span class="muted">building robot systems from requirements to validation.</span></h1>
-      <p class="links">
-        <a class="hl" href="#" id="mail">e-mail</a><script>document.getElementById('mail').href = ['mailto', ':jinhyuk.a.yoon', '\x40gmail.com'].join('');</script> &nbsp; | &nbsp;
-        <a class="hl" target="_blank" href="https://www.linkedin.com/in/jinhyukyoon/">linkedin</a>
-      </p>
-    </section>
+  <main>
+  <section class="wrap intro">
+    <p class="lead">A robotics engineer at <a class="ul" target="_blank" href="https://www.carbon6robotics.com/">CarbonSix</a>, building robot systems from requirements to validation.</p>
+  </section>
 
-    <section class="group">
-      <h2 class="sec">Work</h2>
-      <div class="cards">
-        <div class="card-x">
-          <a class="thumb-link" target="_blank" rel="noopener" href="https://www.carbon6robotics.com/"><img class="thumb" src="./img/carbonsix_t.jpg" alt=""></a>
-          <h3 class="card-title">SigmaKit</h3>
-          <p class="card-sub">Physical AI for manufacturing automation</p>
-          <p class="card-year muted">2026 - present</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/stark/"><img class="thumb" src="./img/stark_t.png" alt=""></a>
-          <h3 class="card-title">Stark</h3>
-          <p class="card-sub">A laparoscopic telesurgical robotic system</p>
-          <p class="card-year muted">2022 - 2026</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/toh2023/"><img class="thumb contain" src="./img/toh2023_t.png" alt=""></a>
-          <h3 class="card-title">Cable-driven Haptic Interface</h3>
-          <p class="card-sub">Maximum workspace and comparative study</p>
-          <p class="card-year muted">2020 - 2021</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/uist2020/"><img class="thumb contain" src="./img/uist2022_t.png" alt=""></a>
-          <h3 class="card-title">Augmenting Physical Buttons</h3>
-          <p class="card-sub">Programmable feels with vibrotactile feedback</p>
-          <p class="card-year muted">2019</p>
-        </div>
+  <section id="work" class="wrap">
+    <a class="work" href="https://www.carbon6robotics.com/" target="_blank" rel="noopener">
+      <div class="pic"><img src="./img/carbonsix_t.jpg" alt=""></div>
+      <div>
+        <div class="mute year-line">2026 - present</div>
+        <h2 class="title">SigmaKit</h2>
+        <p class="mute sub">Physical AI for manufacturing automation</p>
       </div>
-    </section>
+    </a>
+    <a class="work" href="./work/stark/">
+      <div class="pic"><img src="./img/stark_lineup.jpg" alt=""></div>
+      <div>
+        <div class="mute year-line">2022 - 2026</div>
+        <h2 class="title">Stark</h2>
+        <p class="mute sub">A laparoscopic telesurgical robotic system</p>
+      </div>
+    </a>
+    <a class="work" href="./work/toh2023/">
+      <div class="pic contain"><img src="./img/toh2023_t.png" alt=""></div>
+      <div>
+        <div class="mute year-line">2020 - 2021</div>
+        <h2 class="title">Cable-driven Haptic Interface</h2>
+        <p class="mute sub">Maximum workspace and comparative study</p>
+      </div>
+    </a>
+    <a class="work" href="./work/uist2020/">
+      <div class="pic contain"><img src="./img/uist2022_t.png" alt=""></div>
+      <div>
+        <div class="mute year-line">2019</div>
+        <h2 class="title">Augmenting Physical Buttons</h2>
+        <p class="mute sub">Programmable feels with vibrotactile feedback</p>
+      </div>
+    </a>
+  </section>
 
-    <section class="group">
-      <h2 class="sec">Archive</h2>
-      <div class="cards">
-        <div class="card-x">
-          <a class="thumb-link" href="./work/interactive_torque_designer/"><img class="thumb contain" src="./img/samsung_t.jpg" alt=""></a>
-          <h3 class="card-title">Interactive Torque Designer</h3>
-          <p class="card-sub">Dynamic analysis through graphic interaction</p>
-          <p class="card-year muted">2019</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/science_communication/"><img class="thumb" src="./img/sc_t.png" alt=""></a>
-          <h3 class="card-title">Science Communication</h3>
-          <p class="card-sub">Public speech and on-stage content</p>
-          <p class="card-year muted">2016 - 2020</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/entropy/"><img class="thumb" src="./img/entropy_t.jpg" alt=""></a>
-          <h3 class="card-title">Entropy</h3>
-          <p class="card-sub">Video art metaphor for entropy</p>
-          <p class="card-year muted">2017</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/picture_science/"><img class="thumb" src="./img/karts_t.jpg" alt=""></a>
-          <h3 class="card-title">Picture Science Project</h3>
-          <p class="card-sub">Science with drawing and hands-on activity</p>
-          <p class="card-year muted">2016</p>
-        </div>
-        <div class="card-x">
-          <a class="thumb-link" href="./work/tedx/"><img class="thumb" src="./img/tedx_t.jpg" alt=""></a>
-          <h3 class="card-title">TEDxPOSTECH</h3>
-          <p class="card-sub">Talk conference on the campus</p>
-          <p class="card-year muted">2014 - 2015</p>
-        </div>
-      </div>
-    </section>
+  <section id="archive" class="wrap">
+    <h2>Archive</h2>
+    <div class="arch">
+      <a class="arow" href="./work/interactive_torque_designer/"><span>Interactive Torque Designer</span><span class="mute">2019</span></a>
+      <a class="arow" href="./work/science_communication/"><span>Science Communication</span><span class="mute">2016 - 2020</span></a>
+      <a class="arow" href="./work/entropy/"><span>Entropy</span><span class="mute">2017</span></a>
+      <a class="arow" href="./work/picture_science/"><span>Picture Science Project</span><span class="mute">2016</span></a>
+      <a class="arow" href="./work/tedx/"><span>TEDxPOSTECH</span><span class="mute">2014 - 2015</span></a>
+    </div>
+  </section>
   </main>
+
+  <footer id="contact" class="wrap foot">
+    <span class="name">Jinhyuk Yoon</span>
+    <nav>
+      <a class="ul" id="mail" href="#contact">e-mail</a><script>document.getElementById('mail').href = ['mailto', ':jinhyuk.a.yoon', '\x40gmail.com'].join('');</script>
+      <a class="ul" href="https://www.linkedin.com/in/jinhyukyoon/" target="_blank" rel="noopener">linkedin</a>
+    </nav>
+  </footer>
+
+  <div class="fab">
+    <a href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></a>
+  </div>
 </body>
 
 </html>

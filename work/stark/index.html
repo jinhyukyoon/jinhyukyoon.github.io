@@ -14,109 +14,124 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Stark | Jinhyuk Yoon</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="../../vendor/css/site.css">
 </head>
 
 <body>
-  <header class="container">
-    <nav><ul><li><a class="brand" href="../../">Jinhyuk Yoon</a></li></ul></nav>
+  <header id="top" class="wrap top">
+    <a class="name" href="../../">Jinhyuk Yoon</a>
+    <nav>
+      <a href="../../#work">work</a>
+      <a href="../../#archive">archive</a>
+      <a href="../../#contact">contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1 class="detail-title">Stark</h1>
-    <p class="muted detail-meta">2022 - 2026<br>A laparoscopic telesurgical robotic system</p>
+  <main>
+  <section class="wrap hero">
+    <div class="mute year-line">2022 - 2026</div>
+    <h1 class="big">Stark</h1>
+    <p class="lead">A laparoscopic telesurgical robotic system. I built its control software and system architecture, from prototype to engineering sample.</p>
+    <div class="pic"><img src="../../img/stark_lineup.jpg" alt=""></div>
+  </section>
 
-    <section class="sec-detail">
-      <h2>1. Robot control software</h2>
-      <p class="muted role">
-        My role: control algorithm/software development.<br>
-        Skills: C++, linux RT, real-time control, teleoperation, EtherCAT, system integration, system debugging, validation<br>
-      </p>
-
-      I led control algorithm and software development for Stark, a minimally invasive laparoscopic surgical robot.
-      Stark is a master-slave teleoperation system with tight constraints: surgical instruments, a user experience anchored to existing systems such as da Vinci, and medical device safety requirements.
-      As a founding member of the Robot R&amp;D Department and its Control/SW team, I worked through every stage from prototype to engineering sample.
-
-      <div class="figs wide">
+  <section class="wrap sec">
+    <div class="side">
+      <div class="mute year-line">01</div>
+      <h2 class="title">Robot control software</h2>
+      <p class="mute">Control algorithm and software development</p>
+      <p class="mute">C++, Linux RT, real-time control, teleoperation, EtherCAT, system integration, debugging, validation</p>
+    </div>
+    <div class="body">
+      <p>I led control algorithm and software development for Stark, a minimally invasive laparoscopic surgical robot. Stark is a master-slave teleoperation system with tight constraints: surgical instruments, a user experience anchored to existing systems such as da Vinci, and medical device safety requirements.</p>
+      <p>As a founding member of the Robot R&amp;D Department and its Control/SW team, I worked through every stage from prototype to engineering sample.</p>
+    </div>
+    <div class="figs wide">
         <img src="./img/stark_1.png" alt="">
       </div>
+    <div class="body">
+      <p>The goal was a robot that could be controlled, debugged, repeated, and trusted in realistic surgical workflows. I turned system-level requirements into control software that ran on the real robot.</p>
+      <p>That meant splitting robot functions into software modules and an architecture, integrating hardware interfaces, debugging real-time behavior on the robot, and validating beyond isolated bench tests.</p>
+    </div>
+  </section>
 
-      The goal was a robot that could be controlled, debugged, repeated, and trusted in realistic surgical workflows.
-      I turned system-level requirements into control software that ran on the real robot.
-      That meant splitting robot functions into software modules and an architecture, integrating hardware interfaces, debugging real-time behavior on the robot, and validating beyond isolated bench tests.
-
-      <br><br><br>
-
-          </section>
-
-    <section class="sec-detail">
-      <h2>2. Long distance teleoperation</h2>
-      <p class="muted role">
-        My role: teleoperation integration, system debugging, validation execution<br>
-      </p>
-
-      I contributed to a long-distance remote surgery demonstration over more than 3,000 km, with a measured round-trip delay of 65 ms.
-      The work kept the whole system predictable while human input, network delay, robot motion, and hardware response were connected end to end.
-
-      <div class="video">
+  <section class="wrap sec">
+    <div class="side">
+      <div class="mute year-line">02</div>
+      <h2 class="title">Long distance teleoperation</h2>
+      <p class="mute">Teleoperation integration, system debugging, validation execution</p>
+    </div>
+    <div class="body">
+      <p>I contributed to a long-distance remote surgery demonstration over more than 3,000 km, with a measured round-trip delay of 65 ms. The work kept the whole system predictable while human input, network delay, robot motion, and hardware response were connected end to end.</p>
+    </div>
+    <div class="video">
         <iframe width="854" height="480" src="https://www.youtube.com/embed/o7PK-hOOUtc?rel=0&showinfo=0&controls=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       </div>
+    <div class="body">
+      <p>Many issues surfaced only after the robots and the network were connected as one teleoperation system. I worked across the master, the slave, the control software, and the communication layer.</p>
+      <p>I traced each problem from operator input to robot response, focusing on how latency and timing variation affected stability, responsiveness, and operator control. The demonstration validated the software in an end-to-end surgical workflow.</p>
+    </div>
+  </section>
 
-      Many issues surfaced only after the robots and the network were connected as one teleoperation system.
-      I worked across the master, the slave, the control software, and the communication layer.
-      I traced each problem from operator input to robot response, focusing on how latency and timing variation affected stability, responsiveness, and operator control.
-      The demonstration validated the software in an end-to-end surgical workflow, where control, latency, hardware, and human interaction were tested together.
-
-      <br><br><br>
-
-          </section>
-
-    <section class="sec-detail">
-      <h2>3. System and software architecture</h2>
-      <p class="muted role">
-        My role: system/software architecture design, requirement engineering, interface definition, software V&amp;V<br>
-      </p>
-
-      As the robot and the team grew, the main challenge shifted from implementation to system clarity.
-      Key requirements were often hidden in clinical expectations, business milestones, and the different specialties of each team.
-
-      <div class="figs two">
+  <section class="wrap sec">
+    <div class="side">
+      <div class="mute year-line">03</div>
+      <h2 class="title">System and software architecture</h2>
+      <p class="mute">System and software architecture, requirement engineering, interface definition, software V&amp;V</p>
+    </div>
+    <div class="body">
+      <p>As the robot and the team grew, the main challenge shifted from implementation to system clarity. Key requirements were often hidden in clinical expectations, business milestones, and the different specialties of each team.</p>
+    </div>
+    <div class="figs two">
         <img src="./img/stark_3.png" alt="">
         <img src="./img/stark_4.png" alt="">
       </div>
+    <div class="body">
+      <p>I turned those implicit requirements into architecture, specifications, interfaces, and validation items, clear enough for every team to build, test, review, and maintain.</p>
+      <p>Because Stark is a medical device, the architecture and V&amp;V work also followed regulations and safety standards such as the IEC 60601 family. Software behavior, hardware interfaces, alarms, failure handling, essential performance, and test evidence were treated as parts of one system problem.</p>
+      <p>I also led software V&amp;V with more than 10 software engineers and coordinated architecture and specification work across more than 40 cross-functional members.</p>
+    </div>
+  </section>
 
-      I turned those implicit requirements into architecture, specifications, interfaces, and validation items, clear enough for every team to build, test, review, and maintain.
-      Because Stark is a medical device, the architecture and V&amp;V work also followed regulations and safety standards such as the IEC 60601 family.
-      Software behavior, hardware interfaces, alarms, failure handling, essential performance, and test evidence were treated as parts of one system problem.
-      I connected requirements to implementation and validation so that system behavior could be tested and justified, not only demonstrated.
-      I also led software V&amp;V with more than 10 software engineers and coordinated architecture and specification work across more than 40 cross-functional members.
-
-      <br><br><br>
-
-          </section>
-
-    <section class="sec-detail">
-      <h2>4. Labs and demonstrations</h2>
-      <p class="muted role">
-        My role: system operation/debugging, experiment support, demo execution, issue triage<br>
-      </p>
-
-      I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for the Series E, pre-IPO, and IPO milestones.
-      These sessions tested the robot as a complete system while it was still being improved.
-
-      <div class="figs">
+  <section class="wrap sec">
+    <div class="side">
+      <div class="mute year-line">04</div>
+      <h2 class="title">Labs and demonstrations</h2>
+      <p class="mute">System operation and debugging, experiment support, demo execution, issue triage</p>
+    </div>
+    <div class="body">
+      <p>I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for the Series E, pre-IPO, and IPO milestones. These sessions tested the robot as a complete system while it was still being improved.</p>
+    </div>
+    <div class="figs">
         <img src="./img/stark_5.png" alt="">
       </div>
+    <div class="body">
+      <p>Labs and demonstrations pushed the robot beyond ordinary development conditions. Setup, surgical workflow, hardware variation, timing, operator interaction, and subsystem dependencies all became part of the engineering problem.</p>
+      <p>I kept the system running, traced failures quickly, and fed the findings back into software, control, integration, and validation. Each run clarified requirements, strengthened tests, and improved the implementation.</p>
+    </div>
+  </section>
 
-      Labs and demonstrations pushed the robot beyond ordinary development conditions.
-      Setup, surgical workflow, hardware variation, timing, operator interaction, and subsystem dependencies all became part of the engineering problem.
-      I kept the system running, traced failures quickly, and fed the findings back into software, control, integration, and validation.
-      Each run clarified requirements, strengthened tests, and improved the implementation.
-      <br>
-    </section>
+  <section class="wrap pager">
+    <div>
+      <a class="ul" href="../../#work">all work</a>
+      <a class="next" href="../toh2023/"><div class="mute">next</div><div class="title">Cable-driven Haptic Interface</div></a>
+    </div>
+  </section>
   </main>
+
+  <footer id="contact" class="wrap foot">
+    <span class="name">Jinhyuk Yoon</span>
+    <nav>
+      <a class="ul" href="../../#contact">e-mail</a>
+      <a class="ul" href="https://www.linkedin.com/in/jinhyukyoon/" target="_blank" rel="noopener">linkedin</a>
+    </nav>
+  </footer>
+
+  <div class="fab">
+    <a href="../../" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h4.5v-5.5h3V20H18V9.5"/></svg></a>
+    <a href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></a>
+  </div>
 </body>
 
 </html>

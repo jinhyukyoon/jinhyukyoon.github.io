@@ -14,41 +14,70 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Interactive Torque Designer | Jinhyuk Yoon</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="../../vendor/css/site.css">
 </head>
 
 <body>
-  <header class="container">
-    <nav><ul><li><a class="brand" href="../../">Jinhyuk Yoon</a></li></ul></nav>
+  <header id="top" class="wrap top">
+    <a class="name" href="../../">Jinhyuk Yoon</a>
+    <nav>
+      <a href="../../#work">work</a>
+      <a href="../../#archive">archive</a>
+      <a href="../../#contact">contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1 class="detail-title">Interactive Torque Designer</h1>
-    <p class="muted detail-meta">2019<br>Dynamic analysis through graphic interaction</p>
+  <main>
+  <section class="wrap hero">
+    <div class="mute year-line">2019</div>
+    <h1 class="big">Interactive Torque Designer</h1>
+    <p class="lead">Dynamic analysis through graphic interaction</p>
+    <div class="pic contain"><img src="../../img/samsung_t.jpg" alt=""></div>
+  </section>
 
-    <section class="sec-detail">
-      <p class="muted role">My role: dynamic analysis, application development
-        <br>Advisor: Geonhee Lee, Wangi Park, Junwon Seo, Yongsoo Kyong<br></p>
-      Hinge dynamic analysis is an important part of developing a digital oven.
-      Conventional simulation software needs a complicated process and cannot work in reverse, from a desired hinge profile back to the torque that produces it.
-      Interactive Torque Designer solves both problems with a web application that runs the dynamic analysis and lets engineers design by editing graphs directly.<br>
-      <div class="figs wide">
+  <section class="wrap sec">
+    <div class="side">
+      <p class="mute">Dynamic analysis, application development</p>
+      <p class="mute">Advisor: Geonhee Lee, Wangi Park, Junwon Seo, Yongsoo Kyong</p>
+    </div>
+    <div class="body">
+      <p>Hinge dynamic analysis is an important part of developing a digital oven. Conventional simulation software needs a complicated process and cannot work in reverse, from a desired hinge profile back to the torque that produces it. Interactive Torque Designer solves both problems with a web application that runs the dynamic analysis and lets engineers design by editing graphs directly.</p>
+    </div>
+    <div class="figs wide">
         <img src="./img/samsung_1.gif" alt="">
       </div>
-      A web application is universal and easy to extend.
-      Anyone can use it with only a browser, and new functions need only simple programming.
-      Plots built with d3.js show the dynamic analysis results graphically.
-      Engineers get a torque profile by editing the visualized cam profile, and the reverse.
-      <div class="figs wide">
+    <div class="body">
+      <p>A web application is universal and easy to extend. Anyone can use it with only a browser, and new functions need only simple programming. Plots built with d3.js show the dynamic analysis results graphically. Engineers get a torque profile by editing the visualized cam profile, and the reverse.</p>
+    </div>
+    <div class="figs wide">
         <img src="./img/samsung_2.gif" alt="">
       </div>
-      Feedback from field engineers across design iterations added multi-point drag and other functions that eased the design process.
-      With the final version, engineers analyze torque intuitively and run inverse design, which greatly simplifies the mechanical design of a digital oven.
-      The graphs also help engineers explain mechanical behavior to members of other divisions.
-    </section>
+    <div class="body">
+      <p>Feedback from field engineers across design iterations added multi-point drag and other functions that eased the design process. With the final version, engineers analyze torque intuitively and run inverse design, which greatly simplifies the mechanical design of a digital oven. The graphs also help engineers explain mechanical behavior to members of other divisions.</p>
+    </div>
+  </section>
+
+  <section class="wrap pager">
+    <div>
+      <a class="ul" href="../../#work">all work</a>
+      <a class="next" href="../science_communication/"><div class="mute">next</div><div class="title">Science Communication</div></a>
+    </div>
+  </section>
   </main>
+
+  <footer id="contact" class="wrap foot">
+    <span class="name">Jinhyuk Yoon</span>
+    <nav>
+      <a class="ul" href="../../#contact">e-mail</a>
+      <a class="ul" href="https://www.linkedin.com/in/jinhyukyoon/" target="_blank" rel="noopener">linkedin</a>
+    </nav>
+  </footer>
+
+  <div class="fab">
+    <a href="../../" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h4.5v-5.5h3V20H18V9.5"/></svg></a>
+    <a href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></a>
+  </div>
 </body>
 
 </html>
