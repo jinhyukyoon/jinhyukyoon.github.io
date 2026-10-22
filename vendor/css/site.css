@@ -1,98 +1,85 @@
-/* Site look on top of Pico CSS v2.1.1 (vendor/pico/pico.min.css, https://picocss.com).
-   Monochrome with one yellow highlight, Roboto 300, white theme only (pages set data-theme="light").
-   Rules are kept in the order they were tuned in: later blocks override earlier ones on purpose. */
+/* The whole site look: Jost 300 on white, one 976 px column, home rows and detail sections.
+   Values follow the "B · Quiet" and "B · Stark detail" boards of the design canvas. */
 
-/* shared parts */
-.hl { background: var(--hl, rgba(255,255,0,.2)); color: inherit !important; text-decoration: none; }
-.hl:hover { background: var(--hlh, rgba(255,255,0,1)); color: var(--hl-ink, #000) !important; }
-.plain { color: inherit !important; text-decoration: none; }
-.muted { color: var(--muted-c) !important; }
-.thumb { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
-.thumb.contain { object-fit: contain; background: #fff; }
-.thumb-link { display: block; }
-.intro { font-size: 1.35rem; line-height: 1.4; margin: 0 0 .25rem; font-weight: 600; }
-.links { margin-top: 1rem; font-size: 1.1rem; }
-h2.sec { font-size: 1.2rem; margin: 3rem 0 1.25rem; font-weight: 700; }
-.card-title { font-size: 1.1rem; margin: .9rem 0 .2rem; font-weight: 600; }
-.card-sub { margin: 0 0 .2rem; }
-.card-year { margin: 0 0 1.5rem; font-size: .95rem; }
-.detail-title { font-size: 1.6rem; margin: .5rem 0 .25rem; }
-.detail-meta { margin-bottom: 2.5rem; }
-.sec-detail { margin-bottom: 3rem; }
-.sec-detail h2 { font-size: 1.25rem; margin: 0 0 .4rem; }
-.role { font-size: .95rem; margin-bottom: 1.1rem; }
-.figs { display: grid; gap: 1rem; margin: 1.75rem 0; justify-items: center; }
-.figs.two { grid-template-columns: 1fr 1fr; }
-.figs img { max-width: 100%; max-height: 300px; width: auto; height: auto; display: block; border-radius: var(--img-r, 6px); }
-.figs.wide img { width: 100%; max-height: none; }
-.video { margin: 1.75rem 0; }
-.video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
-@media (max-width: 767px) { .figs.two { grid-template-columns: 1fr; } }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #24221f; font-family: 'Jost', system-ui, sans-serif; font-weight: 300; }
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+h1, h2 { margin: 0; font-weight: 400; }
+.wrap { max-width: 976px; margin: 0 auto; padding: 0 40px; }
+.ul { text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
+.mute, .muted { color: #77736c; }
 
-/* Pico tuning: fixed 15px base, monochrome palette */
-:root { --pico-font-size: 93.75% !important; }
-:root[data-theme="light"][data-theme] {
-  --pico-background-color: #ffffff; --pico-color: #1a1a1a; --pico-muted-color: #727272;
-  --pico-h1-color: #1a1a1a; --pico-h2-color: #1a1a1a; --pico-h3-color: #1a1a1a;
-  --pico-primary: #1a1a1a; --pico-primary-hover: #1a1a1a; --pico-primary-underline: transparent;
-  --pico-muted-border-color: #e8e8e8;
-  --muted-c: #727272; --hl: rgba(255,229,0,.35); --hlh: #ffe500; --hl-ink: #000; --img-r: 6px;
-}
-body > header { border-bottom: 1px solid #e8e8e8; }
-body > header nav { padding-block: .25rem; }
-.brand { font-weight: 700; font-size: 1.5rem; letter-spacing: -.015em; color: #1a1a1a !important; text-decoration: none; }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 1.75rem; }
-@media (max-width: 767px) { .cards { grid-template-columns: 1fr; } }
-.thumb { border-radius: 6px; }
-main.container:has(.sec-detail) { max-width: 880px; }
-.intro-wrap { padding-top: 1.5rem; }
-.intro { font-size: 1.2rem; }
-.links { font-size: 1rem; }
-h2.sec { font-size: 1.05rem; margin: 2.5rem 0 1rem; }
-.card-title { font-size: 1rem; margin-top: .75rem; }
-.card-sub { font-size: .94rem; }
-.card-year { font-size: .875rem; margin-bottom: 1.25rem; }
-.detail-title { font-size: 1.4rem; }
-.sec-detail h2 { font-size: 1.1rem; }
-.role { font-size: .875rem; }
+/* header and footer, shared by every page */
+.top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem 2.6rem; padding-top: 30px; padding-bottom: 30px; font-size: 1.15rem; }
+.top .name { font-weight: 400; }
+.top nav, .foot nav { display: flex; gap: 2.6rem; }
+.big { font-size: clamp(3.2rem, 7.4vw, 6.6rem); line-height: 1; letter-spacing: -.03em; }
+.home .top { padding-top: 40px; }
+.foot { display: flex; justify-content: space-between; align-items: baseline; padding-top: 150px; padding-bottom: 50px; font-size: 1.15rem; }
+.foot .name { font-weight: 400; }
+.home .foot { padding-top: 170px; }
+.lead { margin: 0; font-size: clamp(1.5rem, 2.4vw, 2.05rem); line-height: 1.4; }
 
-/* thin type, bare top bar with a large name, wide margins */
-body, h1, h2, h3, .brand, .intro { font-family: 'Roboto', sans-serif; }
-body { font-weight: 300; }
-body > header { border-bottom: 0; }
-body > header nav { padding-block: .9rem; }
-body > header nav { padding-top: 4.5rem; padding-bottom: 0; }
-body > header, body > main { padding-block: 0; }
-.brand { font-weight: 500; font-size: 3.75rem; line-height: 1.1; letter-spacing: -.02em; }
-main:has(.sec-detail) { padding-top: 2.5rem; }
-.intro-wrap { padding: 1.25rem 0 1rem; }
-.intro { font-size: 1.2rem; line-height: 1.5; font-weight: 300; margin: 0; }
-.intro .muted { color: #1a1a1a !important; }
-.intro + .intro .muted { color: #727272 !important; }
-.links { margin-top: 1.5rem; font-size: 1rem; }
-.hl { background: none; text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; }
+/* home */
+.intro { padding-top: 110px; padding-bottom: 170px; }
+.intro .lead { max-width: 46rem; }
+#work { display: flex; flex-direction: column; gap: 120px; }
+.work { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 3.5rem; align-items: center; }
+.pic { aspect-ratio: 3 / 2; background: #fff; overflow: hidden; }
+.pic img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.pic.contain img { object-fit: contain; }
+.work:hover .pic img { transform: scale(1.03); }
+.year-line { font-size: .95rem; margin-bottom: .9rem; }
+.title { font-size: 2.1rem; line-height: 1.15; }
+.work .sub { margin: .8rem 0 0; font-size: 1.12rem; line-height: 1.5; }
+#archive { padding-top: 170px; }
+#archive h2 { margin: 0 0 1.6rem; font-size: 1.5rem; }
+.arch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 4rem; }
+.arow { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1rem 0; border-top: 1px solid #e7e5e0; font-size: 1.08rem; }
+.arow .mute { white-space: nowrap; }
+
+/* detail */
+.hero { padding-top: 90px; }
+.hero .year-line { margin-bottom: 1.2rem; }
+.hero .lead { margin-top: 1.6rem; }
+.hero .pic { margin-top: 70px; background: #f1f0ed; }
+.sec { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 3.5rem; padding-top: 110px; }
+.side { align-self: start; }
+.side p { margin: .6rem 0 0; font-size: 1rem; line-height: 1.6; }
+.side .title + p { margin-top: 1rem; }
+.side > p:first-child { margin-top: 0; }
+/* Body text always sits in the right column, also after a full-width figure. */
+.sec > .body { grid-column: 2; }
+.body p { margin: 0 0 1.2rem; font-size: 1.12rem; line-height: 1.7; }
+.sec > .figs, .sec > .video { grid-column: 1 / -1; margin: 1.5rem 0 1rem; }
+.figs img { width: 100%; }
+.figs:not(.wide):not(.two):not(.three) { width: 100%; max-width: 760px; margin-left: auto; }
+.figs.two, .figs.three { display: grid; gap: 1.5rem; align-items: start; }
+.figs.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.figs.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.video { position: relative; aspect-ratio: 16 / 9; background: #f1f0ed; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* Paper links inside detail text, kept from the old look. */
+.hl { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; transition: background .12s; }
 .hl:hover { background: #ffe500; text-decoration: none; }
-.hl { transition: background .12s; }
-h2.sec { font-size: 1.6rem; font-weight: 300; margin: 5rem 0 1.5rem; }
-.cards { column-gap: 2rem; }
-.thumb { border-radius: 0; }
-.card-x .thumb-link { overflow: hidden; }
-.card-x .thumb { transition: transform .25s cubic-bezier(.2, .7, .2, 1); }
-.card-x .thumb-link:hover .thumb { transform: scale(1.03); }
-.thumb.contain { padding: 4% 5%; box-sizing: border-box; }
-body > header.container, main.container { max-width: 880px; }
-.intro a.plain { transition: background .12s; }
-.intro a.plain:hover { background: #ffe500; color: #1a1a1a !important; }
-.card-title { font-size: 1.15rem; font-weight: 400; margin-top: 1rem; }
-.card-sub { font-size: .95rem; color: #727272; }
-.card-year { font-size: .85rem; margin-bottom: 2.5rem; }
-.detail-title { font-size: 2.2rem; font-weight: 300; }
-.sec-detail h2 { font-size: 1.35rem; font-weight: 400; }
-.figs img { border-radius: 0; }
-@media (max-width: 767px) { .brand { font-size: 2.5rem; } body > header nav { padding-top: 2.5rem; } }
-
-/* detail parts with no counterpart above */
-.figs.three { grid-template-columns: repeat(3, 1fr); }
-@media (max-width: 767px) { .figs.three { grid-template-columns: 1fr; } }
 .year { font-size: 1.25rem; }
 .subheading { font-size: 1.1rem; }
+.pager { padding-top: 150px; }
+.pager > div { display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; flex-wrap: wrap; border-top: 1px solid #e7e5e0; padding-top: 2rem; }
+.pager .ul { font-size: 1.08rem; }
+.pager .next { text-align: right; }
+.pager .next .mute { font-size: .95rem; margin-bottom: .4rem; }
+
+/* round buttons fixed at the bottom right */
+.fab { position: fixed; right: 24px; bottom: 24px; z-index: 5; display: flex; flex-direction: column; gap: 10px; }
+.fab a { width: 44px; height: 44px; border: 1px solid #d6d3cd; border-radius: 50%; background: #fff; color: #77736c; display: flex; align-items: center; justify-content: center; transition: color .3s ease, border-color .3s ease; }
+.fab a:hover { color: #24221f; border-color: #24221f; }
+.fab svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+
+@media (max-width: 760px) {
+  .fab { right: 14px; bottom: 14px; }
+  .wrap { padding: 0 20px; }
+  .work, .arch, .sec, .figs.two, .figs.three { grid-template-columns: 1fr; gap: 1.5rem; }
+  .sec > .body { grid-column: auto; }
+}

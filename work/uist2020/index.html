@@ -14,47 +14,75 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>Augmenting Physical Buttons | Jinhyuk Yoon</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
-  <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="../../vendor/css/site.css">
 </head>
 
 <body>
-  <header class="container">
-    <nav><ul><li><a class="brand" href="../../">Jinhyuk Yoon</a></li></ul></nav>
+  <header id="top" class="wrap top">
+    <a class="name" href="../../">Jinhyuk Yoon</a>
+    <nav>
+      <a href="../../#work">work</a>
+      <a href="../../#archive">archive</a>
+      <a href="../../#contact">contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1 class="detail-title">Augmenting Physical Buttons</h1>
-    <p class="muted detail-meta">2019<br>Programmable feels with vibrotactile feedback</p>
+  <section class="wrap hero">
+    <div class="mute year-line">2019</div>
+    <h1 class="big">Augmenting Physical Buttons</h1>
+    <p class="lead">Programmable feels with vibrotactile feedback</p>
+    <div class="pic contain"><img src="../../img/uist2022_t.png" alt=""></div>
+  </section>
 
-    <section class="sec-detail">
-      <p class="muted role">My role: hardware prototyping, sensing system design, user study design and analysis
-        <br>Collaborator: Chaeyong park, Seungjae Oh<br>
-        Advisor: Seungmoon Choi<br></p>
-
-      <a class="hl" href="../../files/UIST2020.pdf">Chaeyong Park, <b>Jinhyuk Yoon</b>, Seungjae Oh, and Seungmoon Choi. Augmenting Physical Buttons with Vibrotactile Feedback for Programmable Feels. In <i>Proceedings of the ACM Symposium on User Interface Software and Technology (UIST)</i>, pp. 924-937, October 20-23, 2020 (Acceptance rate 21.6%).</a> <br><br>
-
-      Physical buttons give clear haptic feedback when pressed and released, but the feel never changes.
-      Force actuators can make a button produce any click sensation, but at a substantial cost.
-      <div class="figs">
+  <section class="wrap sec">
+    <div class="side">
+      <p class="mute">Hardware prototyping, sensing system design, user study design and analysis</p>
+      <p class="mute">Collaborator: Chaeyong park, Seungjae Oh</p>
+      <p class="mute">Advisor: Seungmoon Choi</p>
+    </div>
+    <div class="body">
+      <p><a class="hl" href="../../files/UIST2020.pdf">Chaeyong Park, <b>Jinhyuk Yoon</b>, Seungjae Oh, and Seungmoon Choi. Augmenting Physical Buttons with Vibrotactile Feedback for Programmable Feels. In <i>Proceedings of the ACM Symposium on User Interface Software and Technology (UIST)</i>, pp. 924-937, October 20-23, 2020 (Acceptance rate 21.6%).</a> <br><br> Physical buttons give clear haptic feedback when pressed and released, but the feel never changes. Force actuators can make a button produce any click sensation, but at a substantial cost.</p>
+    </div>
+    <div class="figs">
         <img src="./img/uist2020_1.png" alt="">
       </div>
-      A cheaper alternative is to add a simple vibration actuator to a physical button.
-      When pressed, the augmented button overlays a vibration on the button's original kinesthetic response, following the framework of haptic augmented reality.
-      <div class="figs">
+    <div class="body">
+      <p>A cheaper alternative is to add a simple vibration actuator to a physical button. When pressed, the augmented button overlays a vibration on the button's original kinesthetic response, following the framework of haptic augmented reality.</p>
+    </div>
+    <div class="figs">
         <img src="./img/uist2020_2.png" alt="">
       </div>
-      We explored the design space by varying vibration frequency, amplitude, duration, and envelope.
-      We estimated a perceptual space for 7 physical buttons and 40 augmented buttons to visualize their perceptual structure.
-      We also rated their sensations against adjectives and mapped the results into that space to find meaningful perceptual dimensions.
-      <div class="figs wide">
+    <div class="body">
+      <p>We explored the design space by varying vibration frequency, amplitude, duration, and envelope. We estimated a perceptual space for 7 physical buttons and 40 augmented buttons to visualize their perceptual structure. We also rated their sensations against adjectives and mapped the results into that space to find meaningful perceptual dimensions.</p>
+    </div>
+    <div class="figs wide">
         <img src="./img/uist2020_3.png" alt="">
       </div>
-      The results show the benefits and limitations of vibration-augmented physical buttons, with a focus on how they feel.
-      <br>
-    </section>
-  </main>
+    <div class="body">
+      <p>The results show the benefits and limitations of vibration-augmented physical buttons, with a focus on how they feel.</p>
+    </div>
+  </section>
+
+  <section class="wrap pager">
+    <div>
+      <a class="ul" href="../../#work">all work</a>
+      <a class="next" href="../interactive_torque_designer/"><div class="mute">next</div><div class="title">Interactive Torque Designer</div></a>
+    </div>
+  </section>
+
+  <footer id="contact" class="wrap foot">
+    <span class="name">Jinhyuk Yoon</span>
+    <nav>
+      <a class="ul" href="../../#contact">e-mail</a>
+      <a class="ul" href="https://www.linkedin.com/in/jinhyukyoon/" target="_blank" rel="noopener">linkedin</a>
+    </nav>
+  </footer>
+
+  <div class="fab">
+    <a href="../../" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h4.5v-5.5h3V20H18V9.5"/></svg></a>
+    <a href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></a>
+  </div>
 </body>
 
 </html>
