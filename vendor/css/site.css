@@ -11,11 +11,10 @@ h1, h2 { margin: 0; font-weight: 400; }
 .mute, .muted { color: #77736c; }
 
 /* header and footer, shared by every page */
-.top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem 2.6rem; padding-top: 30px; padding-bottom: 30px; font-size: 1.15rem; }
+.top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem 2.6rem; padding-top: 40px; padding-bottom: 30px; font-size: 1.15rem; }
 .top .name { font-weight: 400; }
 .top nav, .foot nav { display: flex; gap: 2.6rem; }
 .big { font-size: clamp(3.2rem, 7.4vw, 6.6rem); line-height: 1; letter-spacing: -.03em; }
-.home .top { padding-top: 40px; }
 .foot { display: flex; justify-content: space-between; align-items: baseline; padding-top: 150px; padding-bottom: 50px; font-size: 1.15rem; }
 .foot .name { font-weight: 400; }
 .home .foot { padding-top: 170px; }
@@ -29,6 +28,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 .pic { aspect-ratio: 3 / 2; background: #fff; overflow: hidden; }
 .pic img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .pic.contain img { object-fit: contain; }
+.work .pic.contain img { padding: 6% 7%; box-sizing: border-box; }
 .work:hover .pic img { transform: scale(1.03); }
 .year-line { font-size: .95rem; margin-bottom: .9rem; }
 .title { font-size: 2.1rem; line-height: 1.15; font-weight: 400; }
@@ -41,11 +41,14 @@ h1, h2 { margin: 0; font-weight: 400; }
 
 /* detail */
 .hero { padding-top: 90px; }
+.hero h1.big { font-size: clamp(2.6rem, 4.9vw, 4.4rem); }
 .hero .year-line { margin-bottom: 1.2rem; }
 .hero .lead { margin-top: 1.6rem; }
 .hero .pic { margin-top: 70px; background: #f1f0ed; }
 .sec { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 3.5rem; padding-top: 110px; }
 .side { align-self: start; }
+.side .title { font-size: 1.6rem; }
+.side .year-line { font-size: 1.1rem; }
 .side p { margin: .6rem 0 0; font-size: 1rem; line-height: 1.6; }
 .side .title + p { margin-top: 1rem; }
 .side > p:first-child { margin-top: 0; }
@@ -80,6 +83,10 @@ h1, h2 { margin: 0; font-weight: 400; }
 @media (max-width: 760px) {
   .fab { right: 14px; bottom: 14px; }
   .wrap { padding-left: 20px; padding-right: 20px; }
+  .top { flex-wrap: nowrap; align-items: flex-start; gap: 1rem; }
+  .top .name { min-width: 0; }
+  .top nav { flex-direction: column; align-items: flex-end; gap: .3rem; padding-top: .35rem; }
+  .side .title { font-size: 1.4rem; }
   .sec { padding-top: 0; }
   .work, .arch, .sec, .figs.two, .figs.three { grid-template-columns: 1fr; gap: 1.5rem; }
   .sec > .body { grid-column: auto; }
