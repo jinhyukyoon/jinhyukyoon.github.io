@@ -3,7 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stark</title>
+  <meta name="description" content="Stark, a laparoscopic telesurgical robot (2022 - 2026). Jinhyuk Yoon led its control algorithm, middleware and software architecture, and a 3,000+ km remote surgery demo at 65 ms round-trip.">
+  <link rel="canonical" href="https://jinhyukyoon.github.io/work/stark/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jinhyuk Yoon">
+  <meta property="og:title" content="Stark | Jinhyuk Yoon">
+  <meta property="og:description" content="Stark, a laparoscopic telesurgical robot (2022 - 2026). Jinhyuk Yoon led its control algorithm, middleware and software architecture, and a 3,000+ km remote surgery demo at 65 ms round-trip.">
+  <meta property="og:url" content="https://jinhyukyoon.github.io/work/stark/">
+  <meta property="og:image" content="https://jinhyukyoon.github.io/img/stark_t.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Stark | Jinhyuk Yoon</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="../../vendor/pico/pico.min.css">
@@ -26,18 +35,17 @@
         Skills: C++, linux RT, real-time control, teleoperation, EtherCAT, system integration, system debugging, validation<br>
       </p>
 
-      I led on control algorithms and software development for a minimally invasive laparoscopic surgical robot, Stark.
-      Stark is a teleoperation system with master and slave robot that involves many constraints such as surgical instruments, anchored user experience from exsiting system like Da Vinci, and safety requirements as a medical device.
-      As a founding member of the Robot R&amp;D Department and Control/SW team, I participated development stages from prototype to engineering sample.
+      I led control algorithm and software development for Stark, a minimally invasive laparoscopic surgical robot.
+      Stark is a master-slave teleoperation system with tight constraints: surgical instruments, a user experience anchored to existing systems such as da Vinci, and medical device safety requirements.
+      As a founding member of the Robot R&amp;D Department and its Control/SW team, I worked through every stage from prototype to engineering sample.
 
       <div class="figs wide">
         <img src="./img/stark_1.png" alt="">
       </div>
 
-      I translated system level requirements into control software behavior that could run on real system.
-      This involved decomposing robot functions into software module and architecture, integrating hardware interfaces, debugging real-time behavior on the robot, and validating the system beyond isolated bench tests.
-
-      The goal was to build a robot system that could be controlled, debugged, repeated, and trusted in realistic surgical workflows.
+      The goal was a robot that could be controlled, debugged, repeated, and trusted in realistic surgical workflows.
+      I turned system-level requirements into control software that ran on the real robot.
+      That meant splitting robot functions into software modules and an architecture, integrating hardware interfaces, debugging real-time behavior on the robot, and validating beyond isolated bench tests.
 
       <br><br><br>
 
@@ -49,18 +57,17 @@
         My role: teleoperation integration, system debugging, validation execution<br>
       </p>
 
-      I contributed to a long distance remote surgical procedure demonstration over more than 3,000 km with a measured round-trip delay of 65 ms.
-      The work focused on keeping the whole robot system predictable when human input, network delay, robot motion, and hardware response were connected end to end.
+      I contributed to a long-distance remote surgery demonstration over more than 3,000 km, with a measured round-trip delay of 65 ms.
+      The work kept the whole system predictable while human input, network delay, robot motion, and hardware response were connected end to end.
 
       <div class="video">
         <iframe width="854" height="480" src="https://www.youtube.com/embed/o7PK-hOOUtc?rel=0&showinfo=0&controls=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
       </div>
 
-      I worked across master, slave, control software, and communication layer.
-      Many issues only surfaced after the robot system and network were connected as a full teleoperation system.
-      I traced problems from operator input to physical robot response, focusing on how latency and timing variations affected stability, responsiveness, and operator control.
-
-      The demonstration validated the software within an end-to-end surgical workflow, where control behavior, system latency, hardware response, and human interaction had to be tested together.
+      Many issues surfaced only after the robots and the network were connected as one teleoperation system.
+      I worked across the master, the slave, the control software, and the communication layer.
+      I traced each problem from operator input to robot response, focusing on how latency and timing variation affected stability, responsiveness, and operator control.
+      The demonstration validated the software in an end-to-end surgical workflow, where control, latency, hardware, and human interaction were tested together.
 
       <br><br><br>
 
@@ -72,22 +79,19 @@
         My role: system/software architecture design, requirement engineering, interface definition, software V&amp;V<br>
       </p>
 
-      As the robot system and team grew, the main challenge shifted from implementation to system clarity.
-      Important requirements were often hidden inside clinical expectations, business milestone, and different specialties of each team.
+      As the robot and the team grew, the main challenge shifted from implementation to system clarity.
+      Key requirements were often hidden in clinical expectations, business milestones, and the different specialties of each team.
 
       <div class="figs two">
         <img src="./img/stark_3.png" alt="">
         <img src="./img/stark_4.png" alt="">
       </div>
 
-      I turned those implicit requirements into architecture, specifications, interfaces, and validation items.
-      The system had to be clear enough to build, test, review, and maintain across teams.
-
-      As the medical device, the software architecture and V&amp;V work also considered regulatories and safety standards such as the IEC 60601 family.
-      Software behavior, hardware interfaces, alarms, failure handling, essential performance, and test evidence were treated as connected parts of the same system problem.
-
-      I helped connect requirements to implementation and validation so that system behavior could be tested and justified, rather than only demonstrated.
-      I also led software V&ampV with more than 10 software engineers and coordinated architecture and specification work across more than 40 cross-functional members.
+      I turned those implicit requirements into architecture, specifications, interfaces, and validation items, clear enough for every team to build, test, review, and maintain.
+      Because Stark is a medical device, the architecture and V&amp;V work also followed regulations and safety standards such as the IEC 60601 family.
+      Software behavior, hardware interfaces, alarms, failure handling, essential performance, and test evidence were treated as parts of one system problem.
+      I connected requirements to implementation and validation so that system behavior could be tested and justified, not only demonstrated.
+      I also led software V&amp;V with more than 10 software engineers and coordinated architecture and specification work across more than 40 cross-functional members.
 
       <br><br><br>
 
@@ -99,18 +103,17 @@
         My role: system operation/debugging, experiment support, demo execution, issue triage<br>
       </p>
 
-      I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for Series E, pre-IPO, and IPO milestones.
-      These settings tested the robot as a complete system, while robot system was still under development with numerous improvements.
+      I led system operation for 6 animal labs, 5 cadaver labs, and more than 20 investor demonstrations for the Series E, pre-IPO, and IPO milestones.
+      These sessions tested the robot as a complete system while it was still being improved.
 
       <div class="figs">
         <img src="./img/stark_5.png" alt="">
       </div>
 
-      Labs and demonstrations tested the robot beyond ordinary development conditions.
-      System setup, surgical workflow, hardware variation, timing, operator interaction, and subsystem dependencies all became part of the engineering problem.
-
-      I kept the system operational, traced failures quickly, and brought the findings back into software, control, integration, and validation.
-      Each run helped clarify requirements, strengthen tests, and improve implementation.
+      Labs and demonstrations pushed the robot beyond ordinary development conditions.
+      Setup, surgical workflow, hardware variation, timing, operator interaction, and subsystem dependencies all became part of the engineering problem.
+      I kept the system running, traced failures quickly, and fed the findings back into software, control, integration, and validation.
+      Each run clarified requirements, strengthened tests, and improved the implementation.
       <br>
     </section>
   </main>

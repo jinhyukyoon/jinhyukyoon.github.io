@@ -41,7 +41,7 @@ h2.sec { font-size: 1.2rem; margin: 3rem 0 1.25rem; font-weight: 700; }
 body > header { border-bottom: 1px solid #e8e8e8; }
 body > header nav { padding-block: .25rem; }
 .brand { font-weight: 700; font-size: 1.5rem; letter-spacing: -.015em; color: #1a1a1a !important; text-decoration: none; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 1.75rem; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 1.75rem; }
 @media (max-width: 767px) { .cards { grid-template-columns: 1fr; } }
 .thumb { border-radius: 6px; }
 main.container:has(.sec-detail) { max-width: 880px; }
