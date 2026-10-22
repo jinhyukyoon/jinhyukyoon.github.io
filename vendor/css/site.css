@@ -44,7 +44,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 .hero h1.big { font-size: clamp(2.6rem, 4.9vw, 4.4rem); }
 .hero .year-line { margin-bottom: 1.2rem; }
 .hero .lead { margin-top: 1.6rem; }
-.hero .pic { margin-top: 70px; background: #f1f0ed; }
+.hero .pic { margin-top: 70px; }
 .sec { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 3.5rem; padding-top: 110px; }
 .side { align-self: start; }
 .side .title { font-size: 1.6rem; }
@@ -61,11 +61,12 @@ h1, h2 { margin: 0; font-weight: 400; }
 .figs.two, .figs.three { display: grid; gap: 1.5rem; align-items: start; }
 .figs.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .figs.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.video { position: relative; aspect-ratio: 16 / 9; background: #f1f0ed; }
+.video { position: relative; aspect-ratio: 16 / 9; background: #fff; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-/* Paper links inside detail text, kept from the old look. */
-.hl { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; transition: background .12s; }
-.hl:hover { background: #ffe500; text-decoration: none; }
+/* Paper links inside detail text, kept from the old look; header and footer links share the hover. */
+.hl { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; }
+.hl, .top nav a, .foot nav a { transition: background .12s; }
+.hl:hover, .top nav a:hover, .foot nav a:hover { background: rgba(255, 229, 0, .5); text-decoration: none; }
 .year { font-size: 1.25rem; }
 .subheading { font-size: 1.1rem; }
 .pager { padding-top: 150px; }
