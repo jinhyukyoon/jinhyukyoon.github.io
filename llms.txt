@@ -7,10 +7,10 @@
 - SigmaKit: Physical AI for manufacturing automation (2026 - present)
 - [Stark](https://jinhyukyoon.github.io/work/stark/): A laparoscopic telesurgical robotic system (2022 - 2026)
 - [Cable-driven Haptic Interface](https://jinhyukyoon.github.io/work/toh2023/): Maximum workspace and comparative study (2020 - 2021)
-- [Augmenting Physical Buttons](https://jinhyukyoon.github.io/work/uist2020/): Programmable feels with vibrotactile feedback (2019)
 
 ## Archive
 
+- [Augmenting Physical Buttons](https://jinhyukyoon.github.io/work/uist2020/): Programmable feels with vibrotactile feedback (2019)
 - [Interactive Torque Designer](https://jinhyukyoon.github.io/work/interactive_torque_designer/): Dynamic analysis through graphic interaction (2019)
 - [Science Communication](https://jinhyukyoon.github.io/work/science_communication/): Public speech and on-stage content (2016 - 2020)
 - [Entropy](https://jinhyukyoon.github.io/work/entropy/): Video art metaphor for entropy (2017)
