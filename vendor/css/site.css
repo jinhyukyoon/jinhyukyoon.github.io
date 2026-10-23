@@ -69,7 +69,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 /* Paper links inside detail text, kept from the old look. Every text link shares the hover except home thumbnails, archive rows, the header name and the round buttons. */
 .hl { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; }
 a:not(.work, .arow, .name, .fab a) { transition: background .12s; }
-a:not(.work, .arow, .name, .fab a):hover { background: rgba(255, 229, 0, .5); text-decoration: none; }
+a:not(.work, .arow, .name, .fab a):hover { background: rgba(215, 38, 30, .16); text-decoration: none; }
 .year { font-size: 1.25rem; }
 .subheading { font-size: 1.1rem; }
 .pager { padding-top: 150px; }
