@@ -70,6 +70,9 @@ h1, h2 { margin: 0; font-weight: 400; }
 .hl { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 1px; }
 a:not(.work, .arow, .name, .fab a) { transition: background .12s; }
 a:not(.work, .arow, .name, .fab a):hover { background: rgba(215, 38, 30, .16); text-decoration: none; }
+/* The link that opens the Stark patent list. The arrow shows whether the list is open. */
+.toggle::after { content: " \25BE"; }
+.toggle[aria-expanded="true"]::after { content: " \25B4"; }
 .year { font-size: 1.25rem; }
 .subheading { font-size: 1.1rem; }
 .pager { padding-top: 150px; }
